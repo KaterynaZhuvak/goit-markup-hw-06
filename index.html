@@ -28,10 +28,16 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="current-page-line current-page-color nav-link link" href="./index.html">Studio</a>
+              <a
+                class="current-page-line current-page-color nav-link link"
+                href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="nav-item">
-              <a class="page-hover nav-link link" href="./portfolio.html">Portfolio</a>
+              <a class="page-hover nav-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-item">
               <a class="page-hover nav-link link" href="">Contacts</a>
@@ -532,6 +538,21 @@
             </li>
           </ul>
         </div>
+
+        <div class="contact-footer-container">
+          <label>
+            <p class="footer-icon-title">Subscribe</p>
+            <input class="contact-form-input-footer" type="email" name="footer_user_email" placeholder="E-mail" />
+          </label>
+          <button class="btn-subscribe" type="submit">
+            <span class="footer-btn-title">Subscribe</span>
+            <svg class="icon-send-btn" width="24" height="24">
+              <use
+                href="./images/icons.svg#icon-send-btn"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
@@ -542,6 +563,58 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="contact-form">
+          <label class="contact-form-wrapper">
+            <span class="contact-form-input-title">Name</span> 
+            <span class="contact-form-input-wrapper">
+              <input class="contact-form-input" type="text" name="user_name" required pattern="[a-zA-zа-яА-яіІїЇґҐєЄ']+" />
+              <svg class="contact-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-wrapper">
+            <span class="contact-form-input-title">Phone</span> 
+            <span class="contact-form-input-wrapper">
+              <input class="contact-form-input" type="text" name="user_name" required pattern="[a-zA-zа-яА-яіІїЇґҐєЄ']+" />
+              <svg class="contact-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-wrapper">
+            <span class="contact-form-input-title">Email</span> 
+            <span class="contact-form-input-wrapper">
+              <input class="contact-form-input" type="text" name="user_name" required pattern="[a-zA-zа-яА-яіІїЇґҐєЄ']+" />
+              <svg class="contact-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="contact-form-wrapper">
+            <span class="contact-form-input-title">Comment</span> 
+            <textarea
+              class="contact-form-comment"
+              type="textarea"
+              name="comments"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <label class="contact-form-checkbox-wrapper">
+            <input
+              class="contact-form-checkbox visually-hidden"
+              name="user_policy"
+              type="checkbox"
+              required
+            />
+            <svg class="contact-form-check-mark" width="16" height="16">
+              <use class="contact-form-check-mark-icon" href="./images/icons.svg#icon-check-mark"></use>
+            </svg>
+            <span class="check-mark-text">I accept the terms and conditions of the <a class="policy-link" href="">Privacy Policy</a></span> 
+          </label>
+          <button class="modal-button-send" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
