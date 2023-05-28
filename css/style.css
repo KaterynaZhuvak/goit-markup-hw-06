@@ -859,7 +859,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   padding: 8px 16px;
-  margin-bottom: 16px;
   margin-top: 4px;
   resize: none;
   color: rgba(46, 47, 66, 0.4);
@@ -881,13 +880,6 @@ img {
   margin-bottom: 24px;
 }
 
-.contact-form-check-mark {
-  padding: 4px 3px;
-  fill: var(--pale-accent-color);
-  cursor: pointer;
-  margin-right: 8px;
-}
-
 .fake-check-mark {
   width: 16px;
   height: 16px;
@@ -900,31 +892,14 @@ img {
   cursor: pointer;
 }
 
-.contact-form-checkbox:checked + .fake-check-mark {
+
+
+.contact-form-checkbox:checked + .check-mark-text .fake-check-mark{
   background-color: var(--hover-color);
   border: none;
   fill: var(--main-white-color);
   border-color: var(--hover-color);
 }
-
-/* .contact-form-check-mark-icon {
-  opacity: 0;
-}
-
-.contact-form-checkbox:checked + .contact-form-check-mark {
-  background-color: var(--hover-color);
-  border: 1px solid var(--hover-color);
-}
-
-.contact-form-checkbox:checked
-  + .contact-form-check-mark
-  .contact-form-check-mark-icon {
-  opacity: 1;
-}
-
-.contact-form-checkbox:focus + .contact-form-check-mark {
-  outline: 1px solid var(--accent-color);
-} */
 
 .modal-button-send {
   font-family: "Roboto", sans-serif;
