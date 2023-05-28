@@ -897,14 +897,22 @@ border: 1px solid rgba(46, 47, 66, 0.4);
   align-items: center;
   justify-content: center;
   fill: transparent;
+  cursor: pointer;
 }
 
-.contact-form-check-mark-icon {
+.contact-form-checkbox:checked + .fake-check-mark {
+  background-color: var(--hover-color);
+  border: none;
+  fill: var(--main-white-color);
+  border-color: var(--hover-color);
+}
+
+/* .contact-form-check-mark-icon {
   opacity: 0;
 }
 
-.contact-form-checkbox:checked + .contact-form-check-mark {
-  background: var(--hover-color);
+.contact-form-checkbox:checked + .fake-check-mark {
+  background-color: var(--hover-color);
   border: 1px solid var(--hover-color);
 }
 
@@ -916,7 +924,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 
 .contact-form-checkbox:focus + .contact-form-check-mark {
   outline: 1px solid var(--accent-color);
-}
+} */
 
 .modal-button-send {
   font-family: "Roboto", sans-serif;
