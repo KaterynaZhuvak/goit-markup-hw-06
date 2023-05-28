@@ -542,10 +542,10 @@
         <div class="contact-footer-container">
           <p class="footer-icon-title">Subscribe</p>
           <form class="footer-contact-form-wrapper">
-            <label class="footer-contact-label-wrapper">
+            <label class="footer-contact-label-wrapper"></label>
               <input
                 class="contact-form-input-footer"
-                name="footer_user_email"
+                name="footer-user-email"
                 type="email"
                 placeholder="E-mail"
               />
@@ -555,7 +555,6 @@
                   <use href="./images/icons.svg#icon-send-btn"></use>
                 </svg>
               </button>
-            </label>
           </form>
         </div>
       </div>
@@ -620,9 +619,7 @@
           </div>
 
           <div class="contact-wrapper">
-            <label class="contact-form-wrapper" for="user-comment"
-              >Comment</label
-            >
+            <label class="contact-form-wrapper" name="user-comment" for="user-comment">Comment</label>
             <textarea
               class="contact-form-comment"
               id="user-comment"
@@ -633,10 +630,6 @@
           </div>
 
           <div class="contact-form-checkbox-wrapper">
-            <label class="check-mark-text" for="user-privacy"
-              >I accept the terms and conditions of the
-              <a class="policy-link" href="">Privacy Policy</a></label
-            >
             <input
               class="contact-form-checkbox visually-hidden"
               id="user-privacy"
@@ -645,6 +638,7 @@
               required
               value="true"
             />
+            <label class="check-mark-text" for="user-privacy">I accept the terms and conditions of the<a class="policy-link" href="">Privacy Policy</a></label>
             <span class="fake-check-mark">
               <svg class="contact-form-check-mark" width="10" height="8">
                 <use

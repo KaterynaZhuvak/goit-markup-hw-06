@@ -653,13 +653,6 @@ img {
 .footer-contact-label-wrapper {
   margin-right: 24px;
 }
-/* 
-.contact-footer-container{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 24px;
-} */
 
 .contact-form-input-footer {
   width: 264px;
@@ -858,7 +851,7 @@ img {
 .contact-form-comment {
   width: 100%;
   height: 120px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   font-style: normal;
   font-weight: 400;
