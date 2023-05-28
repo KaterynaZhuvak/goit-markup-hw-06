@@ -891,7 +891,7 @@ img {
 .fake-check-mark {
   width: 16px;
   height: 16px;
-border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   display: inline-flex;
   align-items: center;
@@ -911,7 +911,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
   opacity: 0;
 }
 
-.contact-form-checkbox:checked + .fake-check-mark {
+.contact-form-checkbox:checked + .contact-form-check-mark {
   background-color: var(--hover-color);
   border: 1px solid var(--hover-color);
 }
