@@ -540,18 +540,18 @@
         </div>
 
         <div class="contact-footer-container">
-          <label>
             <p class="footer-icon-title">Subscribe</p>
-            <input class="contact-form-input-footer" type="email" name="footer_user_email" placeholder="E-mail" />
-          </label>
-          <button class="btn-subscribe" type="submit">
-            <span class="footer-btn-title">Subscribe</span>
-            <svg class="icon-send-btn" width="24" height="24">
-              <use
-                href="./images/icons.svg#icon-send-btn"
-              ></use>
-            </svg>
-          </button>
+            <form class="footer-contact-form-wrapper">
+              <label class="footer-contact-label-wrapper">
+                <input class="contact-form-input-footer" type="email" name="footer_user_email" placeholder="E-mail" />
+                <button class="btn-subscribe" type="submit">
+                 Subscribe
+                  <svg class="icon-send-btn" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send-btn"></use>
+                  </svg>
+                </button>
+              </label>
+          </form>
         </div>
       </div>
     </footer>
@@ -565,55 +565,61 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="contact-form">
-          <label class="contact-form-wrapper">
-            <span class="contact-form-input-title">Name</span> 
-            <span class="contact-form-input-wrapper">
-              <input class="contact-form-input" type="text" name="user_name" required pattern="[a-zA-zа-яА-яіІїЇґҐєЄ']+" />
-              <svg class="contact-form-input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="contact-form-wrapper">
-            <span class="contact-form-input-title">Phone</span> 
-            <span class="contact-form-input-wrapper">
-              <input class="contact-form-input" type="text" name="user_name" required pattern="[a-zA-zа-яА-яіІїЇґҐєЄ']+" />
+          <div class="form-wrapper">
+            <label class="contact-form-wrapper" for="user_name">
+              Name 
+              <div class="contact-form-input-wrapper">
+                  <input class="contact-form-input" id="user-name" type="text" name="user_name" required pattern="[a-zA-zа-яА-яіІїЇґҐєЄ']+" />
+                  <svg class="contact-form-input-icon" width="18" height="24">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+              </div>
+            </label>
+          </div>
+
+        <div class="form-wrapper">
+          <label class="contact-form-wrapper" for="user_phone">
+            Phone
+            <div class="contact-form-input-wrapper">
+              <input class="contact-form-input" id="user-phone" type="tel" name="user_phone" required />
               <svg class="contact-form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-            </span>
+            </div>
           </label>
-          <label class="contact-form-wrapper">
-            <span class="contact-form-input-title">Email</span> 
-            <span class="contact-form-input-wrapper">
-              <input class="contact-form-input" type="text" name="user_name" required pattern="[a-zA-zа-яА-яіІїЇґҐєЄ']+" />
+        </div>
+            
+        <div class="form-wrapper">
+          <label class="contact-form-wrapper" for="user_email">
+            Email
+            <div class="contact-form-input-wrapper">
+              <input class="contact-form-input" id="user-email" type="email" name="user_email" required />
               <svg class="contact-form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-            </span>
+            </div>
           </label>
-          <label class="contact-form-wrapper">
-            <span class="contact-form-input-title">Comment</span> 
-            <textarea
-              class="contact-form-comment"
-              type="textarea"
-              name="comments"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <label class="contact-form-checkbox-wrapper">
-            <input
-              class="contact-form-checkbox visually-hidden"
-              name="user_policy"
-              type="checkbox"
-              required
-            />
-            <svg class="contact-form-check-mark" width="16" height="16">
-              <use class="contact-form-check-mark-icon" href="./images/icons.svg#icon-check-mark"></use>
-            </svg>
-            <span class="check-mark-text">I accept the terms and conditions of the <a class="policy-link" href="">Privacy Policy</a></span> 
-          </label>
-          <button class="modal-button-send" type="submit">Send</button>
+        </div>
+
+        <div class="">
+          <label class="contact-form-wrapper" for="user_comment">
+            Comment
+          <textarea class="contact-form-comment" id="user-comment" type="textarea" name="comments"
+            placeholder="Text input"></textarea>
+            </label>
+        </div>
+        
+            <div class="contact-form-checkbox-wrapper">
+              <input class="contact-form-checkbox visually-hidden" id="user-privacy" name="privacy" type="checkbox" required value="true"/>
+              <label class="check-mark-text" for="user_privacy">I accept the terms and conditions of the <a class="policy-link" href="">Privacy
+                Policy</a>
+              <span class="fake-check-mark">
+<svg class="contact-form-check-mark" width="10" height="8">
+  <use class="contact-form-check-mark-icon" href="./images/icons.svg#icon-check-mark"></use>
+</svg>
+              </span>
+            </label>
+            <button class="modal-button-send" type="submit">Send</button>
         </form>
       </div>
     </div>

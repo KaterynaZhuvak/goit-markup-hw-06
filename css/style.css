@@ -646,21 +646,33 @@ img {
   margin-bottom: 16px;
 }
 
+.footer-contact-form-wrapper {
+  display: flex;
+}
+
+.footer-contact-label-wrapper {
+  margin-right: 24px;
+}
+/* 
 .contact-footer-container{
   display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 24px;
-}
+} */
 
 .contact-form-input-footer {
   width: 264px;
   height: 40px;
   border: 1px solid var(--main-white-color);
-  background: var(--main-color);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--main-white-color);
-    border-radius: 4px;
-   padding: 8px 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
 }
 
 .contact-form-input-footer::placeholder {
@@ -674,7 +686,9 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 0.04em;
   color: var(--main-white-color);
   background-color: var(--accent-color);
@@ -682,6 +696,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   min-width: 165px;
+  height: 40px;
   border: none;
   cursor: pointer;
 
@@ -699,7 +714,7 @@ img {
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
-  
+  margin-left: 16px;
 
   fill: var(--main-white-color);
 }
@@ -785,8 +800,7 @@ img {
   margin-bottom: 16px;
 }
 
-.contact-form-wrapper {
-  display: block;
+.form-wrapper {
   margin-bottom: 8px;
 }
 
@@ -796,23 +810,25 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-input-title {
+.contact-form-wrapper {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--icons-border-color);
+  display: block;
+  margin-bottom: 4px;
 }
 
 .contact-form-input-wrapper {
   position: relative;
-  display: block;
-  margin-top: 4px;
 }
 
 .contact-form-input-icon {
@@ -848,6 +864,9 @@ img {
   margin-bottom: 16px;
   margin-top: 4px;
   resize: none;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -865,12 +884,23 @@ img {
 }
 
 .contact-form-check-mark {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
+  
+
   padding: 4px 3px;
   fill: var(--pale-accent-color);
   cursor: pointer;
   margin-right: 8px;
+}
+
+.fake-check-mark {
+  width: 16px;
+  height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .contact-form-check-mark-icon {
@@ -910,6 +940,7 @@ img {
   margin-left: auto;
   border: none;
   height: 56px;
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
