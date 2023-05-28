@@ -623,7 +623,7 @@
             <textarea
               class="contact-form-comment"
               id="user-comment"
-              name="comments"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -632,20 +632,17 @@
             <input
               class="contact-form-checkbox visually-hidden"
               id="user-privacy"
-              name="privacy"
+              name="user-privacy"
               type="checkbox"
               required
               value="true"
             />
-            <label class="check-mark-text" for="user-privacy">I accept the terms and conditions of the<a class="policy-link" href="">Privacy Policy</a></label>
-            <span class="fake-check-mark">
+            <label class="check-mark-text" for="user-privacy"><span class="fake-check-mark">
               <svg class="contact-form-check-mark" width="10" height="8">
-                <use
-                  class="contact-form-check-mark-icon"
-                  href="./images/icons.svg#icon-check-mark"
-                ></use>
+                <use class="contact-form-check-mark-icon" href="./images/icons.svg#icon-check-mark"></use>
               </svg>
             </span>
+            I accept the terms and conditions of the<a class="policy-link" href="">Privacy Policy</a></label>
           </div>
           <button class="modal-button-send" type="submit">Send</button>
         </form>
