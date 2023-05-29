@@ -577,11 +577,10 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 80px;
 }
 
 .logo-footer-container {
-  margin-right: 40px;
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -619,6 +618,10 @@ img {
   color: var(--pale-accent-color);
   background: var(--main-color);
   max-width: 264px;
+}
+
+.list-icon-container {
+  margin-right: 80px;
 }
 
 .footer-list {
@@ -828,6 +831,7 @@ img {
   position: absolute;
   top: 50%;
   left: 16px;
+  fill: var(--main-color);
   transform: translateY(-50%);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -859,9 +863,9 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   padding: 8px 16px;
-  margin-top: 4px;
+  display: block;
   resize: none;
-  color: rgba(46, 47, 66, 0.4);
+  color: var(--main-color);
   background-color: transparent;
   outline: transparent;
 
@@ -885,14 +889,13 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  margin-right: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
   cursor: pointer;
 }
-
-
 
 .contact-form-checkbox:checked + .check-mark-text .fake-check-mark{
   background-color: var(--hover-color);
